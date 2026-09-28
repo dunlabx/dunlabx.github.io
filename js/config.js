@@ -33,7 +33,8 @@ window.SUPPORT_CONFIG = {
       TON: { name: "TON", label: "TON", icon: "assets/icons/networks/ton.svg", enabled: true, address: "UQC8FAGanwb17ds7DvGF3BZ2LkzrSBRIbUV2jCR_p6zY8dkv" }
     } },
     USDC: { name: "USD Coin", symbol: "USDC", icon: "assets/icons/currencies/usdc.svg", enabled: true, networks: {
-      ETHEREUM: { name: "Ethereum", label: "Ethereum (ERC20)", icon: "assets/icons/networks/ethereum.svg", enabled: true, address: "0x4bA510B5A26C6799E37302d1C73626F56ab7c3d8" },
+      ERC20: { name: "Ethereum", label: "Ethereum (ERC20)", icon: "assets/icons/networks/ethereum.svg", enabled: true, address: "0x4bA510B5A26C6799E37302d1C73626F56ab7c3d8" },
+      BEP20: { name: "BNB Smart Chain", label: "BNB Smart Chain (BEP20)", icon: "assets/icons/networks/bnb.svg", enabled: true, address: "0x4bA510B5A26C6799E37302d1C73626F56ab7c3d8" },
       SOLANA: { name: "Solana", label: "Solana", icon: "assets/icons/networks/solana.svg", enabled: false, address: "0x4bA510B5A26C6799E37302d1C73626F56ab7c3d8" },
       BASE: { name: "Base", label: "Base", icon: "assets/icons/networks/base.svg", enabled: true, address: "0x4bA510B5A26C6799E37302d1C73626F56ab7c3d8" },
       POLYGON: { name: "Polygon", label: "Polygon", icon: "assets/icons/networks/polygon.svg", enabled: true, address: "0x4bA510B5A26C6799E37302d1C73626F56ab7c3d8" }
@@ -45,13 +46,13 @@ window.SUPPORT_CONFIG = {
       SOLANA: { name: "Solana", label: "Solana", icon: "assets/icons/networks/solana.svg", enabled: true, address: "DWgJfY6Ti8DU1FT1ZtyJ1sNWLWcoTWBNWj7tDyef49ea" }
     } },
     TON: { name: "Toncoin", symbol: "TON", icon: "assets/icons/currencies/ton.svg", enabled: true, networks: {
-      TON: { name: "TON", label: "TON", icon: "assets/icons/networks/ton.svg", enabled: true, address: "" }
+      TON: { name: "TON", label: "TON", icon: "assets/icons/networks/ton.svg", enabled: true, address: "UQC8FAGanwb17ds7DvGF3BZ2LkzrSBRIbUV2jCR_p6zY8dkv" }
     } },
     DOGE: { name: "Dogecoin", symbol: "DOGE", icon: "assets/icons/currencies/doge.svg", enabled: true, networks: {
-      DOGECOIN: { name: "Dogecoin", label: "Dogecoin", icon: "assets/icons/networks/dogecoin.svg", enabled: true, address: "" }
+      DOGECOIN: { name: "Dogecoin", label: "Dogecoin", icon: "assets/icons/networks/dogecoin.svg", enabled: true, address: "DN3tM8P5c7yjAHJgfMj9k6BD5Ww4rqjzqW" }
     } },
     TRX: { name: "TRON", symbol: "TRX", icon: "assets/icons/currencies/trx.svg", enabled: true, networks: {
-      TRON: { name: "TRON", label: "TRON", icon: "assets/icons/networks/tron.svg", enabled: true, address: "" }
+      TRON: { name: "TRON", label: "TRON", icon: "assets/icons/networks/tron.svg", enabled: true, address: "TEx1x1Wx2teXrwFq9pEvHK46QfsJBzjTG9" }
     } },
     LTC: { name: "Litecoin", symbol: "LTC", icon: "assets/icons/currencies/ltc.svg", enabled: true, networks: {
       LITECOIN: { name: "Litecoin", label: "Litecoin", icon: "assets/icons/networks/litecoin.svg", enabled: true, address: "ltc1qddxhyv9nukdfsrmtknxezdpunpcknwfcn7wuxp" }
@@ -60,16 +61,16 @@ window.SUPPORT_CONFIG = {
       XRP: { name: "XRP Ledger", label: "XRP Ledger", icon: "assets/icons/networks/xrp.svg", enabled: true, address: "rwEwpUeTeQdmrzCdsJTte1ok3ft4CsmsgM" }
     } },
     ADA: { name: "Cardano", symbol: "ADA", icon: "assets/icons/currencies/ada.svg", enabled: true, networks: {
-      CARDANO: { name: "Cardano", label: "Cardano", icon: "assets/icons/networks/ada.svg", enabled: true, address: "" }
+      CARDANO: { name: "Cardano", label: "Cardano", icon: "assets/icons/networks/ada.svg", enabled: true, address: "addr1qy032k82vlf5cj50wj7jcugxhn629pw8c5004xxy53tw8770whfl0pwuskw6q95sw95as53946zg550wr63zdar7cjasawwznl" }
     } },
     AVAX: { name: "Avalanche", symbol: "AVAX", icon: "assets/icons/currencies/avax.svg", enabled: true, networks: {
-      CCHAIN: { name: "Avalanche C-Chain", label: "Avalanche C-Chain", icon: "assets/icons/networks/avalanche.svg", enabled: true, address: "" }
+      CCHAIN: { name: "Avalanche C-Chain", label: "Avalanche C-Chain", icon: "assets/icons/networks/avalanche.svg", enabled: true, address: "0x4bA510B5A26C6799E37302d1C73626F56ab7c3d8" }
     } },
     DOT: { name: "Polkadot", symbol: "DOT", icon: "assets/icons/currencies/dot.svg", enabled: true, networks: {
-      POLKADOT: { name: "Polkadot", label: "Polkadot", icon: "assets/icons/networks/polkadot.svg", enabled: true, address: "" }
+      POLKADOT: { name: "Polkadot", label: "Polkadot", icon: "assets/icons/networks/polkadot.svg", enabled: true, address: "13Z2nBvrBUmSCjsMQycEQ2DuvUBuQwdCTLsPzhiDP2fphHAM" }
     } },
     POL: { name: "Polygon", symbol: "POL", icon: "assets/icons/currencies/pol.svg", enabled: true, networks: {
-      POLYGON: { name: "Polygon PoS", label: "Polygon PoS", icon: "assets/icons/networks/polygon.svg", enabled: true, address: "" }
+      POLYGON: { name: "Polygon PoS", label: "Polygon PoS", icon: "assets/icons/networks/polygon.svg", enabled: true, address: "0x4bA510B5A26C6799E37302d1C73626F56ab7c3d8" }
     } },
     DAI: { name: "Dai", symbol: "DAI", icon: "assets/icons/currencies/dai.svg", enabled: true, networks: {
       ETHEREUM: { name: "Ethereum", label: "Ethereum (ERC20)", icon: "assets/icons/networks/ethereum.svg", enabled: true, address: "" }

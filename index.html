@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9ff">
+  <meta name="description" content="Support independent development and help keep DunLabX projects free.">
+  <title>Support Development — DunLabX</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js" defer></script>
+  <script src="js/qr.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <header class="brand" aria-label="DunLabX">DunLabX</header>
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Support <span>Development</span></h1>
+      <p>Support independent development<br class="desktop-break"> and help keep my projects free.</p>
+    </section>
+    <section class="support-card" aria-label="Ways to support DunLabX">
+      <a class="patreon-button" id="patreon-link" target="_blank" rel="noopener noreferrer">
+        <svg class="patreon-mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="20.5" cy="10.5" r="9.5" fill="currentColor"/><path d="M3 1h6v30H3z" fill="currentColor"/></svg>
+        <span>Support on Patreon</span>
+        <svg class="button-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </a>
+      <div class="separator" aria-hidden="true"><span></span><b>or</b><span></span></div>
+      <section class="crypto-section" aria-labelledby="crypto-title">
+        <h2 id="crypto-title">Send Crypto</h2>
+        <p class="crypto-intro" id="crypto-intro">Choose a cryptocurrency and network<br class="desktop-break"> to get the wallet address.</p>
+        <div id="wallet-empty" class="empty-state" hidden>
+          <span class="empty-icon" aria-hidden="true">⌁</span>
+          <p>Crypto support is currently unavailable.</p>
+          <span>Wallet options will appear here when configured.</span>
+        </div>
+        <div id="wallet-content" hidden>
+          <div class="selector-grid">
+            <div class="field-group">
+              <label for="currency-select">Cryptocurrency</label>
+              <div class="select-wrap" id="currency-wrap">
+                <img id="currency-icon" class="select-icon" alt="">
+                <select id="currency-select" aria-label="Cryptocurrency"></select>
+              </div>
+            </div>
+            <div class="field-group">
+              <label for="network-select">Network</label>
+              <div class="select-wrap" id="network-wrap">
+                <img id="network-icon" class="select-icon" alt="">
+                <select id="network-select" aria-label="Network"></select>
+              </div>
+            </div>
+          </div>
+          <div class="wallet-result" id="wallet-result" aria-live="polite">
+            <div class="qr-frame"><canvas id="qr-canvas" width="256" height="256" role="img" aria-label="Wallet address QR code"></canvas></div>
+            <p class="wallet-label" id="wallet-label"></p>
+            <div class="address-row">
+              <code id="wallet-address"></code>
+              <button class="copy-button" id="copy-button" type="button" aria-label="Copy wallet address">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3"/></svg>
+                <span aria-live="polite">Copy</span>
+              </button>
+            </div>
+            <div class="network-warning" role="note">
+              <span class="warning-icon" aria-hidden="true">!</span>
+              <p id="warning-text"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="page-footer">
+      <p>Thank you for your support! <span aria-label="heart">❤️</span></p>
+      <span>DunLabX</span>
+    </footer>
+  </main>
+</body>
+</html>
